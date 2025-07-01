@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+:root {
+    --fundo: black;
+    --fundo-card:hsl(0, 0%, 8%);
+    --botao1:hsl(0, 2%, 17%);
+    --botao2: rgb(86, 85, 86);
+    --list:hsl(0, 0%, 15%);
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Figtree";
+    background-color: var(--fundo);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+
+
+.content{
+    display: flex;
+    flex-flow: column ;
+    gap: 2em;
+    padding: 30px;
+    background-color: var(--fundo-card);
+    border-radius: 20px;
+}
+
+.content-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+input#task {
+    width: 250px;
+    height: 30px;
+    padding: 0.3em;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button#ok{
+    background-color: rgb(12, 135, 12);
+    padding: .4rem .8rem;
+    transition: .3s;
+}
+ button#ok:hover{
+    background-color: rgb(27, 73, 27);
+    color: white
+}
+
+button#enviar {
+    background-color: var(--botao1);
+}
+button#enviar:hover{
+    background-color: var(--botao2);
+    color: white;
+    transition: .3s;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+}
+
+
+li {
+    font-size: 1.4em;
+    text-transform: capitalize;
+    list-style-type: none;
+    padding: 4px;
+    
+    display: flex;
+    align-items: center; /*alinhar as letras no centro*/
+    justify-content: space-between;
+}
+
+li:hover {
+    background-color: var(--list);
+    border-radius: 10px;
+    transition: .3s;
+    padding-left: 1em;
+} 
